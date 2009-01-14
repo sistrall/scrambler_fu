@@ -1,0 +1,29 @@
+h1. ScramblerFu
+
+Basically scrambles the content of a table.
+
+h2. Usage case
+
+Say you have a dump of your real DB that you want to take home with 
+you from work. In the same time you really don't want to have matters
+with privacy, private data and similar.
+
+Problem solved: after a scramble you'll have your DB full of random data.
+
+h2. Usage
+
+Define a model as usable with this plugin with @acts_as_scramblable@
+
+  class User < ActiveRecord::Base
+    acts_as_scramblable :email => :letters,
+                        :name => :order,
+                        :code => [:numbers, :letters]
+  end
+
+Than you can execute a task using rake:
+
+  rake db:scramble
+
+h2. Copyright and license  
+
+Copyright (c) 2009 Silvano Stralla, released under the MIT license
