@@ -5,7 +5,7 @@ Basically scrambles the content of a table.
 h2. Usage case
 
 Say you have a dump of your real DB that you want to take home with 
-you from work. In the same time you really don't want to have matters
+you from work. In the same time you really don't want to have trouble
 with privacy, private data and similar.
 
 Problem solved: after a scramble you'll have your DB full of random data.
