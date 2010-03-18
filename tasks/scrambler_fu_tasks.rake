@@ -6,7 +6,7 @@
 namespace :db do
   desc "Scrambles everything!"
   task :scramble => :environment do
-    Dir["#{RAILS_ROOT}/app/models/*.rb"].each do |file|
+    Dir["#{RAILS_ROOT}/app/models/**/*.rb"].each do |file|
       require file
     end
 
